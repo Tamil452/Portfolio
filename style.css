@@ -1,0 +1,54 @@
+#navb li a
+{
+    position: relative;
+    text-decoration: none;
+}
+:root {
+    --primary-color:rgb(0,39,67);
+    --secondary-color:rgb(242,244,245);
+    --tertiary-color: rgb(255,213,23);
+    --quaternary-color: rgb(174,248,6);
+  }
+  
+.dark-theme {
+    --primary-color:rgb(38,38,40);   
+    --secondary-color:rgb(242,244,245);
+    --tertiary-color:rgb(209,251,80);
+    --quaternary-color: rgb(229,229,231);
+}
+#navb li a:after
+{
+content: "";
+position: absolute;
+background-color: red;
+height: 3px;
+width:0% ;
+right: 0;
+bottom: -10px;
+transition: 0.3s;
+}
+#navb li a:hover::after
+{
+    width: 100%;
+}
+#icon
+{
+    cursor: pointer;
+}
+
+.b{
+    background-color:var(--primary-color);
+  }
+
+.ic-clr
+  {
+      color: var(--secondary-color);
+  }
+  .txt-clr
+  {
+      color: var(--tertiary-color);
+  }
+  .txt
+  {
+      color: var(--quaternary-color);
+  }
